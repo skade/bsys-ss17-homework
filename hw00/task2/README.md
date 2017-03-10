@@ -13,7 +13,7 @@
         └── main.rs
     ```
 
-1. Kopieren Sie die entsprechende README.md Datei (`hw00/task2/README.md`) aus dem `htwg-syslab/bsys-ss17-homework` in das hw00 Verzeichnis. Darin enthalten ist die Aufgabe für task2.
+1. Kopieren Sie die entsprechende README.md Datei (`hw00/task2/README.md`) aus dem `htwg-syslab-bsys/bsys-ss17-homework` in das hw00 Verzeichnis. Darin enthalten ist die Aufgabe für task2.
 1. Kopieren Sie die Datei `tests/output.bats` in das von Ihnen in *task2* erstellte `tests/` Verzeichnis.
 1. Die Bearbeitung dieser Aufgaben soll auf einem anderen Git-Branch geschehen.
 Legen Sie dazu einen Branch `hw00-t2` an, von welchem Sie später den PR öffnen.

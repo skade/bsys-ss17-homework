@@ -7,21 +7,21 @@
 1. Melden Sie sich beim Laborassistenten zum Labor persönlich an. Sie bekommen für das Labor eine virtuelle 'Workstation' zugeteilt.
 1. Testen Sie Ihre Anmeldung im Laborraum. Melden Sie sich dazu mit Ihrer Kennung auf der zugeteilten Workstation an.
 
-### Fork des htwg-syslab GitHub Repository
+### Fork des htwg-syslab-bsys GitHub Repository
 
-Um auf Ihr htwg-syslab beheimatete Repository für das BSYS Labor zu erhalten, müssen Sie einige Punkte vorab durchführen:
+Um auf Ihr htwg-syslab-bsys beheimatete Repository für das BSYS Labor zu erhalten, müssen Sie einige Punkte vorab durchführen:
 
 1. Legen Sie sich - soweit noch nicht vorhanden - einen GitHub Account an.
-1. Über den Einladungslink im Moodle-Forum erstellen Sie Ihre Labor-Gruppe unter htwg-syslab auf github.
+1. Über den Einladungslink im Moodle-Forum erstellen Sie Ihre Labor-Gruppe unter htwg-syslab-bsys auf github.
 
 >Es macht keinen Sinn eine 1er Gruppe anzumelden, wenn Sie noch keinen Partner gefunden haben, da Sie immer beide RZ-IDs zum Anmelden benötigen. Bitte suchen Sie sich zeitnah einen Partner, mit dem Sie das Labor bestreiten wollen.
 
 1. ***WICHTIG***: Sie legen sich nun eine Gruppe für Ihr 2er Team an.
     - Name der Gruppe: Die Gruppe, die Sie auf github anlegen muss aus Ihren beiden RZ-IDs bestehen. Achtung: Die RZ-IDs mit einem Bindestrich und alles klein geschrieben! Die User *ssorglos* und *wwacker* würden also die Gruppe `ssorglos-wwacker` anlegen
     - Der 2. Teilnehmer meldet sich zu dieser neuen Gruppe an.
-1. Sie landen auf der "Ready to go" Seite. Dort nehmen Sie bitte zuerst die Einladung an, indem Sie auf den *@htwg-syslab* Link klicken. Nach der Annahme der Einladung können Sie auf Ihr 'Assignment'-Repository per Browser zugreifen
+1. Sie landen auf der "Ready to go" Seite. Dort nehmen Sie bitte zuerst die Einladung an, indem Sie auf den *@htwg-syslab-bsys* Link klicken. Nach der Annahme der Einladung können Sie auf Ihr 'Assignment'-Repository per Browser zugreifen
 1. ***WICHTIG***: Einer(!) in Ihrem 2er Team forkt nun das Projekt, so dass der Fork Ihres Projektes in IHREM Github Account liegt. Mit diesem geforkten Repository werden Sie zunächst arbeiten. Damit der Partner in Ihrem Team auch mit diesem Repository arbeiten kann, müssen Sie ihn in den Einstellungen zu Ihrem Projekt auf github dazu autorisieren.
-    - Führen Sie keine Änderungen auf dem Repository im htwg-syslab Bereich durch, sondern NUR im geforkten Rep in Ihrem privaten github Account.
+    - Führen Sie keine Änderungen auf dem Repository im htwg-syslab-bsys Bereich durch, sondern NUR im geforkten Rep in Ihrem privaten github Account.
 
 ### ssh Key erstellen
 
@@ -67,7 +67,7 @@ Gruppenrepositories *und* [und das Aufgaben Repository][1]) in den selben Ordner
 
 ```
 $ git clone git@github.com:SusiSorglos/bsys-ss17-ssorglos-wwacker.git
-$ git clone https://github.com/htwg-syslab/bsys_ss17_homework.git
+$ git clone https://github.com/htwg-syslab-bsys/bsys_ss17_homework.git
 $ ls
 bsys-ss17-ssorglos-wwacker/         bsys_ss17_homework/
 ```
@@ -124,6 +124,6 @@ des Repositories folgenden Befehl ausführen (nur Linux und Verwandte!):
 
 Ebenfalls in Ihrem Repository ist bereits eine `.gitignore` Datei im Root Ordner. Damit werden von git gewisse Dateitypen und Directories in Ihren `hwNN/` Verzeichnisse ignoriert, so dass Sie diese nicht Ihrem Repository hinzufügen. Achten Sie dennoch drauf, welche Dateien Sie in Ihr Repository hinzufügen, denn in `.gitignore` sind nicht alle Möglichkeiten abgefangen. Fügen Sie mit **git add** immer nur selektiv Dateien hinzu.
 
-[1]: https://github.com/htwg-syslab/bsys_ss17_homework.git
+[1]: https://github.com/htwg-syslab-bsys/bsys_ss17_homework.git
 [git-ssh-key-gen]: https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#generating-a-new-ssh-key
 [git-ssh-key-copy]: https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
