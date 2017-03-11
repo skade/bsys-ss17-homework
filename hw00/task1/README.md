@@ -46,5 +46,5 @@ Rust hat ein fantastischen Paketmanager: Cargo. Dieser beherscht alle Automatisi
 
 1. Erstellen Sie den Branch 'hw00-t1'.
 1. Lassen Sie alle Tests laufen, siehe dazu 'Abgabe allgemein' in der Datei OVERVIEW.md.
-1. Wenn Sie mit Ihrer Bearbeitung zufrieden sind und alle Tests erfolgreich durchlaufen, pushen Sie ihren lokalen branch nach github und erstellen Sie auf github einen Pull-Request(PR) dafür.
+1. Wenn Sie mit Ihrer Bearbeitung zufrieden sind und alle Tests erfolgreich durchlaufen, pushen Sie ihren lokalen branch auf ihren Fork nach github und erstellen Sie auf github einen Pull-Request(PR) gegen das original Repository dafür.
 1. Tragen Sie Ihren Tutor als Reviewer ein.
