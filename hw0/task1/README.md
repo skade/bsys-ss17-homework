@@ -1,4 +1,4 @@
-# Homework hw00 task 1
+# Homework hw0 task 1
 
 
 ## task1: Hello Rust & Hello Cargo
@@ -14,7 +14,7 @@ Ziel von Task 1 ist es, den Umgang mit git, cargo und der Abgabe über einen Pul
 
 Rust hat ein fantastischen Paketmanager: Cargo. Dieser beherscht alle Automatisierungs- und Dependency-Management-Details für Sie, so dass Sie keine Sorgen mehr darüber machen müssen, wenn Sie ein Projekt erstellen, bauen oder aktualisieren.
 
-1. In Ihrem `hw00` Verzeichnis wurde bereits über cargo das Verzeichnis `task1/` angelegt. Ausserdem wurde in diesem Verzeichnis im Unterverzeichnis `tests/` ein Skript hinterlegt, mit welchem Sie später Ihr Programm testen können.
+1. In Ihrem `hw0` Verzeichnis wurde bereits über cargo das Verzeichnis `task1/` angelegt. Ausserdem wurde in diesem Verzeichnis im Unterverzeichnis `tests/` ein Skript hinterlegt, mit welchem Sie später Ihr Programm testen können.
 1. Wenn Sie sich nun in Ihrem Editor die Datei main.rs anschauen, so finden Sie darin bereits das fertige 'Hello World' Programm.
 1. Führen Sie nun **cargo build** und/oder **cargo run** aus. Damit kann das Projekt gebaut bzw. ausgeführt werden.
 1. Im Root Ihres Repositories ist bereits eine `.gitignore` Datei enthalten. Schauen Sie sich den Inhalt dieser Datei an.
@@ -44,7 +44,7 @@ Rust hat ein fantastischen Paketmanager: Cargo. Dieser beherscht alle Automatisi
 
 ### Abgabe task1
 
-1. Erstellen Sie den Branch 'hw00-t1'.
+1. Erstellen Sie den Branch 'hw0-t1'.
 1. Lassen Sie alle Tests laufen, siehe dazu 'Abgabe allgemein' in der Datei OVERVIEW.md.
 1. Wenn Sie mit Ihrer Bearbeitung zufrieden sind und alle Tests erfolgreich durchlaufen, pushen Sie ihren lokalen branch nach github und erstellen Sie auf github einen Pull-Request(PR) dafür.
 1. Tragen Sie Ihren Tutor als Reviewer ein.

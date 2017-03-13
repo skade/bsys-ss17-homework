@@ -1,4 +1,4 @@
-//! HW00 - task1
+//! HW0 - task1
 //!
 //! Introdcution to Rust and Cargo
 

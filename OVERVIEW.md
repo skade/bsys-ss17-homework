@@ -17,7 +17,7 @@ Um auf Ihr htwg-syslab-bsys beheimatete Repository für das BSYS Labor zu erhalt
 >Es macht keinen Sinn eine 1er Gruppe anzumelden, wenn Sie noch keinen Partner gefunden haben, da Sie immer beide RZ-IDs zum Anmelden benötigen. Bitte suchen Sie sich zeitnah einen Partner, mit dem Sie das Labor bestreiten wollen.
 
 1. ***WICHTIG***: Sie legen sich nun eine Gruppe für Ihr 2er Team an.
-    - Name der Gruppe: Die Gruppe, die Sie auf github anlegen muss aus Ihren beiden RZ-IDs bestehen. Achtung: Die RZ-IDs mit einem Bindestrich und alles klein geschrieben! Die User *ssorglos* und *wwacker* würden also die Gruppe `ssorglos-wwacker` anlegen
+    - Name der Gruppe: Benutzen die als Namen den String Ihre Gruppe aus Moodle, also z.B. `grp0`. Achten Sie genau auf die Schreibweise (Gross/Klein-Schreibung)
     - Der 2. Teilnehmer meldet sich zu dieser neuen Gruppe an.
 1. Sie landen auf der "Ready to go" Seite. Dort nehmen Sie bitte zuerst die Einladung an, indem Sie auf den *@htwg-syslab-bsys* Link klicken. Nach der Annahme der Einladung können Sie auf Ihr 'Assignment'-Repository per Browser zugreifen
 1. ***WICHTIG***: Einer(!) in Ihrem 2er Team forkt nun das Projekt, so dass der Fork Ihres Projektes in IHREM Github Account liegt. Mit diesem geforkten Repository werden Sie zunächst arbeiten. Damit der Partner in Ihrem Team auch mit diesem Repository arbeiten kann, müssen Sie ihn in den Einstellungen zu Ihrem Projekt auf github dazu autorisieren.
@@ -42,12 +42,12 @@ aussieht:
 
 ```
 ...
-hw01/
+hw1/
     README.md
     task1/
     task2/
     simu1/
-hw02/
+hw2/
     README.md
     task1/
     task2/
@@ -56,36 +56,36 @@ hw02/
 ```
 
 In den `taskN`-Unterordnern muss Ihre Lösung für die entsprechende Programmieraufgabe
-liegen. in den `simuN`-Unterordnern liegen Ihre Antworten zu den Simulationsaufgaben. Im jeweiligen **README.md** der Homeworks (`hwNN`) finden Sie dazu die nötigen Informationen und Aufgaben.
+liegen. in den `simuN`-Unterordnern liegen Ihre Antworten zu den Simulationsaufgaben. Im jeweiligen **README.md** der Homeworks (`hwN`) finden Sie dazu die nötigen Informationen und Aufgaben.
 
 ## Neue Aufgabenstellung
 
 Neue Übungsaufgaben werden in einem [separaten Repository][1] veröffentlicht. Es kann vorkommen, dass mit der Aufgabenstellung schon ein paar Quelldateien vorgegeben werden; diese müssen Sie dann von dem genannten Repository in Ihren Fork kopieren. Beachten Sie bitte, dass die Ordnerstruktur genau den Vorgaben entsprechen muss.
 
 Dies geht am besten, indem Sie beide Repositories (Ihren Fork des
-Gruppenrepositories *und* [und das Aufgaben Repository][1]) in den selben Ordner klonen (sodass sie nebeneinander liegen). Das ganze sieht dann in etwa im Ordner von Susi Sorglos so aus:
+Gruppenrepositories *und* [und das Aufgaben Repository][1]) in den selben Ordner klonen (sodass sie nebeneinander liegen). Das ganze sieht dann in etwa im Ordner von Susi Sorglos (aus `grp0`) so aus:
 
 ```
-$ git clone git@github.com:SusiSorglos/bsys-ss17-ssorglos-wwacker.git
-$ git clone https://github.com/htwg-syslab-bsys/bsys_ss17_homework.git
+$ git clone git@github.com:SusiSorglos/bsys-ss17-grp0.git
+$ git clone https://github.com/htwg-syslab-bsys/bsys-ss17-homework.git
 $ ls
-bsys-ss17-ssorglos-wwacker/         bsys_ss17_homework/
+bsys-ss17-grp0/         bsys-ss17-homework/
 ```
 
 Wenn eine neue Aufgabe veröffentlicht wurde, muss zunächst
-`bsys_ss17_homework` aktualisiert werden:
+`bsys-ss17-homework` aktualisiert werden:
 
 ```
-$ cd bsys_ss17_homework
+$ cd bsys-ss17-homework
 $ git pull
 $ cd ..
 ```
 
-Nun kann die Aufgabenstellung (mit Quelldateien) der `NN`ten Homework
+Nun kann die Aufgabenstellung (mit Quelldateien) der `N`ten Homework
 in Ihren Fork kopiert werden:
 
 ```
-$ cp -r bsys_ss17_homework/hwNN bsys-ss17-ssorglos-wwacker/
+$ cp -r bsys-ss17-homework/hwN bsys-ss17-grp0/
 ```
 
 
@@ -122,8 +122,8 @@ des Repositories folgenden Befehl ausführen (nur Linux und Verwandte!):
 
 ## gitignore
 
-Ebenfalls in Ihrem Repository ist bereits eine `.gitignore` Datei im Root Ordner. Damit werden von git gewisse Dateitypen und Directories in Ihren `hwNN/` Verzeichnisse ignoriert, so dass Sie diese nicht Ihrem Repository hinzufügen. Achten Sie dennoch drauf, welche Dateien Sie in Ihr Repository hinzufügen, denn in `.gitignore` sind nicht alle Möglichkeiten abgefangen. Fügen Sie mit **git add** immer nur selektiv Dateien hinzu.
+Ebenfalls in Ihrem Repository ist bereits eine `.gitignore` Datei im Root Ordner. Damit werden von git gewisse Dateitypen und Directories in Ihren `hwN/` Verzeichnisse ignoriert, so dass Sie diese nicht Ihrem Repository hinzufügen. Achten Sie dennoch drauf, welche Dateien Sie in Ihr Repository hinzufügen, denn in `.gitignore` sind nicht alle Möglichkeiten abgefangen. Fügen Sie mit **git add** immer nur selektiv Dateien hinzu.
 
-[1]: https://github.com/htwg-syslab-bsys/bsys_ss17_homework.git
+[1]: https://github.com/htwg-syslab-bsys/bsys-ss17-homework.git
 [git-ssh-key-gen]: https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#generating-a-new-ssh-key
 [git-ssh-key-copy]: https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
