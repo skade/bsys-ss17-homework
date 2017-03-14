@@ -60,10 +60,10 @@ liegen. in den `simuN`-Unterordnern liegen Ihre Antworten zu den Simulationsaufg
 
 ## Neue Aufgabenstellung
 
-Neue Übungsaufgaben werden in einem [separaten Repository][1] veröffentlicht. Es kann vorkommen, dass mit der Aufgabenstellung schon ein paar Quelldateien vorgegeben werden; diese müssen Sie dann von dem genannten Repository in Ihren Fork kopieren. Beachten Sie bitte, dass die Ordnerstruktur genau den Vorgaben entsprechen muss.
+Neue Übungsaufgaben werden in einem [separaten Homework Repository][1] veröffentlicht. Es kann vorkommen, dass mit der Aufgabenstellung schon ein paar Quelldateien vorgegeben werden; diese müssen Sie dann von dem genannten Repository in Ihren Fork kopieren. Beachten Sie bitte, dass die Ordnerstruktur genau den Vorgaben entsprechen muss.
 
 Dies geht am besten, indem Sie beide Repositories (Ihren Fork des
-Gruppenrepositories *und* [und das Aufgaben Repository][1]) in den selben Ordner klonen (sodass sie nebeneinander liegen). Das ganze sieht dann in etwa im Ordner von Susi Sorglos (aus `grp0`) so aus:
+Gruppenrepositories *und* [das Aufgaben Repository][1]) in den selben Ordner klonen (sodass sie nebeneinander liegen). Das ganze sieht dann in etwa im Ordner von Susi Sorglos (aus `grp0`) so aus:
 
 ```
 $ git clone git@github.com:SusiSorglos/bsys-ss17-grp0.git
