@@ -5,7 +5,7 @@
 
 # config
 FOLDER="hw*"
-FILES='.+\.\(rs\)'
+FILES='.+\.(rs)'
 
 
 # Exit script on the first error
@@ -18,12 +18,12 @@ ERROR=0
 echo ""
 echo "=== Searching for files with rustfmt warnings ========================"
 FOUND=0
-for f in $(find $FOLDER -regex $FILES); do
-if  [ "$(rustfmt --write-mode=diff $f)" != $'' ]  ; then
+while IFS= read -r -d '' f; do
+if  [ "$(rustfmt --write-mode=diff "$f")" != $'' ]  ; then
     echo "rustfmt warnings found in $f"
     FOUND=1
 fi
-done
+done < <(find -E . -path "./$FOLDER" -iregex $FILES -print0)
 
 if [ $FOUND -eq 0 ] ; then
 echo "=== None found! :-)"

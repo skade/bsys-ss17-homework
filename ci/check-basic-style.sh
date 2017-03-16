@@ -10,7 +10,7 @@
 # config
 COLS=100
 FOLDER="hw*"
-FILES='.+\.\(rs\|toml\|\sh\)'
+FILES='.+\.(rs|toml|sh)'
 
 
 # Exit script on the first error
@@ -21,12 +21,12 @@ ERROR=0
 echo ""
 echo "=== Searching for lines with trailing whitespace... ==================="
 FOUNDTW=0
-for f in $(find $FOLDER -regex $FILES); do
-    if egrep -q " +$" $f ; then
+while IFS= read -r -d '' f; do
+    if egrep -q " +$" "$f" ; then
         echo "! Has trailing whitespace: $f"
         FOUNDTW=1
     fi
-done
+done < <(find -E . -path "./$FOLDER" -iregex $FILES -print0)
 
 if [ $FOUNDTW -eq 0 ] ; then
     echo "=== None found! :-)"
@@ -40,14 +40,14 @@ fi
 echo ""
 echo "=== Searching for files without trailing newline... ==================="
 FOUND=0
-for f in $(find $FOLDER -regex $FILES); do
-    lastline=$(tail -n 1 $f; echo x)
+while IFS= read -r -d '' f; do
+    lastline=$(tail -n 1 "$f"; echo x)
     lastline=${lastline%x}
     if [ "${lastline: -1}" != $'\n' ] ; then
         echo "! Has no single trailing newline: $f"
         FOUND=1
     fi
-done
+done < <(find -E . -path "./$FOLDER" -iregex $FILES -print0)
 
 if [ $FOUND -eq 0 ] ; then
     echo "=== None found! :-)"
@@ -62,12 +62,12 @@ echo ""
 echo "=== Searching for files with wrong line endings ==================="
 
 FOUNDLE=0
-for f in $(find $FOLDER -regex $FILES); do
-    if grep -q $'\r' $f ; then
+while IFS= read -r -d '' f; do
+    if grep -q $'\r' "$f" ; then
         echo "! Has windows/mac line ending: $f"
         FOUNDLE=1
     fi
-done
+done < <(find -E . -path "./$FOLDER" -iregex $FILES -print0)
 
 if [ $FOUNDLE -eq 0 ] ; then
     echo "=== None found! :-)"
@@ -82,12 +82,12 @@ echo ""
 echo "=== Searching for files with tab chars ==================="
 
 FOUNDTAB=0
-for f in $(find $FOLDER -regex $FILES); do
-    if grep -q $'\t' $f ; then
+while IFS= read -r -d '' f; do
+    if grep -q $'\t' "$f" ; then
         echo "! Has tab character: $f"
         FOUNDTAB=1
     fi
-done
+done < <(find -E . -path "./$FOLDER" -iregex $FILES -print0)
 
 if [ $FOUNDTAB -eq 0 ] ; then
     echo "=== None found! :-)"
@@ -103,12 +103,12 @@ fi
 echo ""
 echo "=== Searching for files with too long lines... ========================"
 FOUND=0
-for f in $(find $FOLDER -regex $FILES); do
-    if [ $(wc -L $f | cut -d" " -f1) -gt $COLS ] ; then
+while IFS= read -r -d '' f; do
+    if [ "$(wc -L "$f" | cut -d" " -f1)" -gt $COLS ] ; then
         echo "! Line with more than $COLS chars in $f"
         FOUND=1
     fi
-done
+done < <(find -E . -path "./$FOLDER" -iregex $FILES -print0)
 
 if [ $FOUND -eq 0 ] ; then
     echo "=== None found! :-)"

@@ -15,7 +15,7 @@ export RUSTFLAGS="--deny warnings"
 # generell die CI-Zeiten zu verringern, wechseln wir nie das Verzeichnis und
 # kompilieren immer nur die Aufgaben des aktuellsten Aufgabenblatts.
 
-current_hw=$(ls -dv hw* | tail -n1)
+current_hw=$(find . -type d -name 'hw*' | tail -n1)
 
 if [ -z "$current_hw" ]; then
     echo ""
@@ -34,7 +34,7 @@ for taskdir in $current_hw/task*; do
     if [ -e "$manifest" ]; then
         echo "=== Cargo-Manifest gefunden in '$manifest' -> Cargo-Modus"
         cargo test --manifest-path "$manifest"
-    elif [ $(ls $taskdir/*.rs | wc -l) -ne 0 ]; then
+    elif [ "$(find "$taskdir" -maxdepth 1 -type f -name '*.rs' | wc -l)" -ne 0 ]; then
         echo "=== Sourcedatei(en) gefunden -> rustc-Modus"
         for srcfile in $taskdir/*.rs; do
             echo "=== Kompiliere und teste '$srcfile'..."
