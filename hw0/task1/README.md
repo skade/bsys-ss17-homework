@@ -18,7 +18,7 @@ Rust hat ein fantastischen Paketmanager: Cargo. Dieser beherscht alle Automatisi
 1. Wenn Sie sich nun in Ihrem Editor die Datei main.rs anschauen, so finden Sie darin bereits das fertige 'Hello World' Programm.
 1. Führen Sie nun **cargo build** und/oder **cargo run** aus. Damit kann das Projekt gebaut bzw. ausgeführt werden.
 1. Im Root Ihres Repositories ist bereits eine `.gitignore` Datei enthalten. Schauen Sie sich den Inhalt dieser Datei an.
-    > **cargo build** erstellt die nötigen Bibliotheken und Binaries im Unterverezeichnis `target/`. Die dafür aus dem Internet geladenen Programmversionen werden in `Cargo.lock` gespeichert. Das `target/` Verzeichnis benötigen wir nicht im git Repository, da dies jederzeit wieder per **cargo build** erstellt werden kann. Mit der `.gitignore` Datei können Sie **git** anweisen, bestimmte Dateien/Verzeichnisse zu ignorieren. In Ihrem Repository ist bereits eine `.gitignore` enthalten
+    > **cargo build** erstellt die nötigen Bibliotheken und Binaries im Unterverezeichnis `target/`. Die dafür aus dem Internet geladenen Programmversionen werden in `Cargo.lock` gespeichert. Das `target/` Verzeichnis benötigen wir nicht im git Repository, da dies jederzeit wieder per **cargo build** erstellt werden kann. Mit der `.gitignore` Datei können Sie **git** anweisen, bestimmte Dateien/Verzeichnisse zu ignorieren.
 
 1. Fügen Sie nun über **git add** und **git commit** neue Dateien bzw. geänderte Dateien in Ihr Repository.
 1. Als kleine Fingerübung erstellen Sie nun Ihre 1. Rust Funktion. Die Funktion hat folgende Notation:
