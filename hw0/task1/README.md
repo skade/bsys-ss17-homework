@@ -28,7 +28,7 @@ Rust hat ein fantastischen Paketmanager: Cargo. Dieser beherscht alle Automatisi
     - *name*: Der Name, der hinter Hello, ausgegeben werden soll
     - *n*: Anzahl der Ausgaben
 
-    und gibt mit Hilfe des *println!* Makros 'Hello, \<name\>' aus.
+    und gibt mit Hilfe des *println!* Makros 'Hello, \<name\>!' aus.
 
 1. Dokumentieren Sie diese Hilfsfunktion in Englisch (Einzeiler langt aus), um über **cargo doc** die Dokumentation erstellen zu lassen. Damit Ihre Funktion auch in der Dokumentation auftaucht ist sie in obiger Notation als public (*pub*) markiert.
 > Hinweis: Bitte bennenen Sie Variablen und Funktionen auf Englisch. Das gilt auch für Ihre Dokumentation der Funktionen bzw. Kommentare im Code.
