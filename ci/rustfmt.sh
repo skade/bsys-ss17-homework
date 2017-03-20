@@ -19,10 +19,7 @@ echo ""
 echo "=== Searching for files with rustfmt warnings ========================"
 FOUND=0
 while IFS= read -r -d '' f; do
-if  [ "$(rustfmt --write-mode=diff "$f")" != $'' ]  ; then
-    echo "rustfmt warnings found in $f"
-    FOUND=1
-fi
+  rustfmt --write-mode=diff "$f" || FOUND=1
 done < <(find -E . -path "./$FOLDER" -iregex $FILES -print0)
 
 if [ $FOUND -eq 0 ] ; then
