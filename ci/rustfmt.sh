@@ -23,12 +23,12 @@ while IFS= read -r -d '' f; do
 done < <(find -E . -path "./$FOLDER" -iregex $FILES -print0)
 
 if [ $FOUND -eq 0 ] ; then
-echo "=== None found! :-)"
+  echo "=== None found! :-)"
 else
-echo ""
-echo "!!! Some files with rust format warninge were found."
-echo "!!! Please correct format in these files by running rustfmt!"
-ERROR=1
+  echo ""
+  echo "!!! Some files with rust format warninge were found."
+  echo "!!! Please correct format in these files by running rustfmt!"
+  ERROR=1
 fi
 
 
