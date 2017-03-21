@@ -20,7 +20,6 @@ Rust hat ein fantastischen Paketmanager: Cargo. Dieser beherscht alle Automatisi
 1. Im Root Ihres Repositories ist bereits eine `.gitignore` Datei enthalten. Schauen Sie sich den Inhalt dieser Datei an.
     > **cargo build** erstellt die nötigen Bibliotheken und Binaries im Unterverezeichnis `target/`. Die dafür aus dem Internet geladenen Programmversionen werden in `Cargo.lock` gespeichert. Das `target/` Verzeichnis benötigen wir nicht im git Repository, da dies jederzeit wieder per **cargo build** erstellt werden kann. Mit der `.gitignore` Datei können Sie **git** anweisen, bestimmte Dateien/Verzeichnisse zu ignorieren.
 
-1. Fügen Sie nun über **git add** und **git commit** neue Dateien bzw. geänderte Dateien in Ihr Repository.
 1. Als kleine Fingerübung erstellen Sie nun Ihre 1. Rust Funktion. Die Funktion hat folgende Notation:
     ```Rust
     pub fn multiple_hello(name: &str, n: i32)
@@ -41,6 +40,8 @@ Rust hat ein fantastischen Paketmanager: Cargo. Dieser beherscht alle Automatisi
     Hello, Ferris!
     ```
     > Achten Sie genau auf die Schreibweise Ihrer Ausgabe, also Komma und Gross- und Kleinschreibung. Sonst laufen die automatischen Tests bei Ihrer Abgabe nicht durch.
+1. Fügen Sie nun über **git add** und **git commit** neue Dateien bzw. geänderte Dateien in Ihr Repository.
+
 
 ### Abgabe task1
 
