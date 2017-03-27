@@ -1,12 +1,25 @@
 fn main() {}
 
-fn count(line: &str, c: char) -> u64 {
-}
+fn count(line: &str, c: char) -> u64 {}
 
 #[test]
 fn test_one_char() {
     assert_eq!(count("♥ The quick brown fox jumps over the lazy dog. ♥", 'T'),
                1);
+}
+
+#[test]
+fn test_two_char() {
+    assert_eq!(count("♥ The quick brown fox jumps over the lazy dog. ♥",
+                     '♥'),
+               2);
+}
+
+#[test]
+#[should_panic]
+fn test_wrong() {
+    assert_eq!(count("♥ The quick brown fox jumps over the lazy dog. ♥", 'c'),
+               2);
 }
 
 #[test]
