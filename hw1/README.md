@@ -14,7 +14,18 @@ Optinal are (bonus +1P):
 - simu2
 
 ## Files
-You find already `main.rs` and `output.bats` files for earch rust task. Please remember to use cargo to create a new project for each task and copy the `main.rs` into `src/`. Create in your cargo project a `test/` directory, where you copy the `output.bats` file. See **hw0** for the correct directory setup of each `taskN/ project.
+You find already `main.rs` and `output.bats` files for earch rust task. Please remember to use cargo to create a new project for each task and copy the `main.rs` into `src/`. Create in your cargo project a `tests/` directory, where you copy the `output.bats` file. See **hw0** for the correct directory setup of each `taskN/` project:
+
+```
+hw0/task1
+├── Cargo.lock
+├── Cargo.toml
+├── README.md
+├── src
+│   └── main.rs
+└── tests
+    └── output.bats
+```
 
 ## ASIDE: SIMULATION HOMEWORKS
 
