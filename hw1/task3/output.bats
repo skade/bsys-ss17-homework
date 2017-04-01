@@ -2,13 +2,13 @@
 
 
 @test "Check that we have a debug output" {
-    run stat $BATS_TEST_DIRNAME/../target/debug/task3
-    [ $status = 0 ]
+    run stat "$BATS_TEST_DIRNAME/../target/debug/task3"
+    [ "$status" -eq 0 ]
 }
 
 @test "Output complete and correct formated" {
-    run $BATS_TEST_DIRNAME/../target/debug/task3
-    [[ ${lines[0]} =~ "In '♥ The quick brown fox jumps over the lazy dog. ♥', 3 'e' were found" ]]
+    run "$BATS_TEST_DIRNAME/../target/debug/task3"
+    [[ "${lines[0]}" =~ "In '♥ The quick brown fox jumps over the lazy dog. ♥', 3 'e' were found" ]]
 }
 
 # wc output with white spaces is trimmed by xargs
