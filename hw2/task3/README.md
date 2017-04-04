@@ -21,3 +21,7 @@ Benutzen Sie keine externen Crates, auser Ihren eigenen. Zur Vereinfachung gehen
 Die Tests Ihrer Library müssen in der Datei `tests/task3.rs` implementiert werden. Unit-Tests von Funktionen in `main.rs` werden direkt in der Datei `main.rs` gepflegt.
 
 Tests zum Aufruf Ihres Programms (`tests/output.bats`) werden nicht benötigt.
+
+#### Dokumentation
+
+Erstellen Sie über Ihre crate und alle Library Funktionen eine aussagekräftige Dokumentation mittels Code Kommentare. Über den Aufruf **cargo doc** muss diese Dokumentation komplett erstellt werden können.
