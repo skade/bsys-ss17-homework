@@ -128,7 +128,7 @@ struct Config{
 /// This function will parse the relevant arguments from the
 /// given <Strings>.
 /// Returns Config
-fn parse_arguments_simple(args: &Vec[String]) -> Config
+fn parse_arguments_simple(args: &Vec<String>) -> Config
 ```
 
 Sie müssen nun in der Funktion:
@@ -164,7 +164,7 @@ Config { search: 'a', line: "b" }
 /// This function will parse the relevant arguments from the
 /// given <Strings>.
 /// Returns Config or Error Message in Result
-fn parse_arguments(args: &Vec[String]) -> Result<Config, xx >
+fn parse_arguments(args: &Vec<String>) -> Result<Config, xx >
 ```
 
 Implementieren Sie die folgende Fehlerbehandlung:
