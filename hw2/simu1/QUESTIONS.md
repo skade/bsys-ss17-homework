@@ -39,5 +39,5 @@ If you struggle with your own systems about some strange gcc optimization behavi
 
 
 
-[valgrind][]   http://valgrind.org/downloads/current.html
+[valgrind]: http://valgrind.org/downloads/current.html
 [quick reference gdb]: https://web.stanford.edu/class/cs107/gdb_refcard.pdf
