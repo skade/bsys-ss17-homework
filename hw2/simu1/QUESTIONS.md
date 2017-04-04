@@ -4,7 +4,7 @@
 
 In this task, you will gain some familiarity with memory allocation. First, you’ll write some buggy programs (fun!). Then, you’ll use some tools to help you find the bugs you inserted. Then, you will realize how awesome these tools are and use them in the future, thus making yourself more happy and productive.
 
-The first tool you’ll use is **gdb**, the debugger. There is a lot to learn about this debugger; here we’ll only scratch the surface. Here you can find a [quick reference gdb]. Also **ddd** is installed on lab workstations.
+The first tool you’ll use is **gdb**, the debugger. There is a lot to learn about this debugger; here we’ll only scratch the surface. Here you can find a [quick reference gdb][]. Also **ddd** is installed on lab workstations.
 
 The second tool you’ll use is [valgrind][]. This tool helps find memory leaks and other insidious memory problems in your program.
 
