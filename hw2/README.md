@@ -30,7 +30,7 @@ hw0/task2
 ```
 
 
-## ASIDE: `simu1/`` dir
+## ASIDE: `simu1/` dir
 
 In this homework it's not a simulation homework sitting in `simu1/` but some questions to have fun with buggy c-files. As not to interfer with rust code, questions, c-code and your answers, all files for `simu1/` should sit inside `simu1/`.
 
