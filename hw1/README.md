@@ -3,14 +3,14 @@
 ## Tasks
 To fullfill **hw1** you have to solve:
 
-- t1
-- t2
-- t3
+- task1
+- task2
+- task3
 - simu1
 
 Optinal are (bonus +1P):
 
-- t4
+- task4
 - simu2
 
 ## Files
@@ -38,4 +38,4 @@ You find all Files for your simulation homework in the `simuN/` directory.
 
 ## Pull-Reuest
 
-Please merge any accepted reviews into your branch. If you are ready with the homework, all tests run, please create a pull request named "hw1".
+Please merge any accepted reviews into your branch. If you are ready with the homework, all tests run, please create a pull request named **hw1**.
