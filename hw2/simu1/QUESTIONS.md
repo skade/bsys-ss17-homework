@@ -4,9 +4,9 @@
 
 In this task, you will gain some familiarity with memory allocation. First, you’ll write some buggy programs (fun!). Then, you’ll use some tools to help you find the bugs you inserted. Then, you will realize how awesome these tools are and use them in the future, thus making yourself more happy and productive.
 
-The first tool you’ll use is gdb, the debugger. There is a lot to learn about this debugger; here we’ll only scratch the surface.
+The first tool you’ll use is **gdb**, the debugger. There is a lot to learn about this debugger; here we’ll only scratch the surface. Here you can find a [quick reference gdb]. Also **ddd** is installed on lab workstations.
 
-The second tool you’ll use is [valgrind][] . This tool helps find memory leaks and other insidious memory problems in your program.
+The second tool you’ll use is [valgrind][]. This tool helps find memory leaks and other insidious memory problems in your program.
 
 Please answer the questions, by giving the result and an explanation, why you got the result.  Write your answers in markdown syntax in the new file `ANSWERS.md`. Also checkin your C-Files and one Makefile for all or your C-Files, so that all binaries are build. Do NOT checkin the binaries!
 
@@ -40,3 +40,4 @@ If you struggle with your own systems about some strange gcc optimization behavi
 
 
 [valgrind][]   http://valgrind.org/downloads/current.html
+[quick reference gdb]: https://web.stanford.edu/class/cs107/gdb_refcard.pdf
