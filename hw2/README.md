@@ -9,7 +9,7 @@ To fullfill **hw2** you have to solve:
 
 Optional are (bonus +1P):
 
-- task3 (important: Rust idiomatic Code please)
+- task3 (important: Rust idiomatic code please)
 
 ## Files
 You find already `main.rs` and `output.bats` files for some rust tasks. Please remember to use cargo to create a new project for each task and copy the given files into their dedicated directories.
