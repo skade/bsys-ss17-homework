@@ -39,3 +39,18 @@ You find all Files for your simulation homework in the `simuN/` directory.
 ## Pull-Reuest
 
 Please merge any accepted reviews into your branch. If you are ready with the homework, all tests run, please create a pull request named **hw1**.
+
+## Gradings
+
+## hw1
+
+| Task | max. Credits | Comment |
+|---|---|---|
+| task1 | 0,5 | |
+| task2 | 0,5 | |
+| task3 | 1 | |
+| task4 | 0,5 | |
+| simu1 | 1 | |
+| simu2 | 0,5 | |
+| Deadline | +1 | |
+| = | 5 | |
