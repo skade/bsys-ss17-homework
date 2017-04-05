@@ -46,11 +46,11 @@ Please merge any accepted reviews into your branch. If you are ready with the ho
 
 | Task | max. Credits | Comment |
 |---|---|---|
-| task1 | 0,5 | |
-| task2 | 0,5 | |
+| task1 | 1 | |
+| task2 | 1 | |
 | task3 | 1 | |
 | task4 | +0,5 | |
 | simu1 | 1 | |
 | simu2 | +0,5 | |
 | Deadline | +1 | |
-| = | 5 | |
+| = | 6 | |
