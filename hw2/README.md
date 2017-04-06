@@ -46,7 +46,7 @@ Please merge any accepted reviews into your branch. If you are ready with the ho
 |---|---|---|
 | task1 | 1,5 | |
 | task2 | 1,5 | |
-| task3 | 1 | |
+| task3 | +1 | |
 | simu1 | 1 | |
 | Deadline | +1 | |
 | = | 6 | |
