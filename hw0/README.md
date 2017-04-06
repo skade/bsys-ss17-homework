@@ -9,7 +9,7 @@ To fullfill **hw0** you have to solve:
 
 ## Gradings
 
-## hw0
+### hw0
 
 | Task | max. Credits | Comment |
 |---|---|---|

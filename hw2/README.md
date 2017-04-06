@@ -37,3 +37,16 @@ In this homework it's not a simulation homework sitting in `simu1/` but some que
 ## Pull-Reuest
 
 Please merge any accepted reviews into your branch. If you are ready with the homework, all tests run, please create a pull request named **hw2**.
+
+## Gradings
+
+### hw2
+
+| Task | max. Credits | Comment |
+|---|---|---|
+| task1 | 1,5 | |
+| task2 | 1,5 | |
+| task3 | 1 | |
+| simu1 | 1 | |
+| Deadline | +1 | |
+| = | 6 | |

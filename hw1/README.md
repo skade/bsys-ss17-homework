@@ -42,7 +42,7 @@ Please merge any accepted reviews into your branch. If you are ready with the ho
 
 ## Gradings
 
-## hw1
+### hw1
 
 | Task | max. Credits | Comment |
 |---|---|---|
