@@ -11,9 +11,9 @@ Ausgelagert wird der Code in eine Bibliothek, genauer gesagt in die Datei `src/l
 
 ### Parsen der Config als Methode
 
-Die *parse_config()* Methode steht noch in keinem Zusammenhang mit der Struktur, die die Methode mit Daten füllt.
+Die *parse_arguments()* Methode steht noch in keinem Zusammenhang mit der Struktur, die die Methode mit Daten füllt.
 
-Schreiben Sie einen Konstruktor *new()* für die Datenstruktur *Config* und ersetzten Sie damit die *parse_config() Funktion*. Verwenden Sie nun Config geeignet in Ihrer *main()* Funktion.
+Schreiben Sie einen Konstruktor *new()* für die Datenstruktur *Config* und ersetzten Sie damit die *parse_arguments()* Funktion. Verwenden Sie nun Config geeignet in Ihrer *main()* Funktion.
 
 ### Tests
 
