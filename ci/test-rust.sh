@@ -26,7 +26,7 @@ fi
 echo ""
 echo "=== Aktuelles Aufgabenblatt ist in Ordner $current_hw"
 
-for taskdir in $current_hw/task*; do
+while IFS= read -r -d '' taskdir; do
     echo ""
     echo "=== Teste Lösung von Aufgabe in $taskdir"
 
@@ -50,4 +50,4 @@ for taskdir in $current_hw/task*; do
         echo "!!! Alternativ den Ordner löschen"
         exit 1
     fi
-done
+done < <(find "$current_hw" -type d -name 'task*' -depth 1 -print0)
