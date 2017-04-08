@@ -5,7 +5,7 @@
 # Exit script on the first error
 set -o errexit -o nounset
 
-current_hw=$(find . -type d -name 'hw*' | tail -n1)
+current_hw=$(find . -type d -name 'hw*' | sort | tail -n1)
 
 
 

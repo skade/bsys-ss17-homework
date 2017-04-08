@@ -7,7 +7,6 @@ from __future__ import print_function
 # - bad windows/mac line endings
 # - tab characters
 # - lines longer than XX chars
-from codecs import decode
 from os import walk
 from os.path import join
 
