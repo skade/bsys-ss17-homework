@@ -7,10 +7,7 @@ set -o errexit -o nounset
 
 current_hw=$(find . -type d -name 'hw*' | sort | tail -n1)
 
-
-
-
-for taskdir in $current_hw/task*; do
+while IFS= read -r -d '' taskdir; do
   echo ""
   echo "=== Führe Lösung von Aufgabe in $taskdir aus"
   manifest="$taskdir/Cargo.toml"
@@ -43,4 +40,4 @@ for taskdir in $current_hw/task*; do
       echo "=== keine output Tests via bats ausgeführt"
     fi
   done
-done
+done < <(find "$current_hw" -type d -name 'task*' -depth 1 -print0)
