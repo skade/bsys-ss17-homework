@@ -50,4 +50,4 @@ while IFS= read -r -d '' taskdir; do
         echo "!!! Alternativ den Ordner löschen"
         exit 1
     fi
-done < <(find "$current_hw" -type d -name 'task*' -depth 1 -print0)
+done < <(find "$current_hw" -mindepth 1 -maxdepth 1 -type d -name 'task*' -print0)
