@@ -16,7 +16,7 @@ for taskdir in $current_hw/task*; do
   manifest="$taskdir/Cargo.toml"
   if [ -e "$manifest" ]; then
     echo "=== Cargo-Manifest gefunden in '$manifest' -> Cargo-Modus"
-    cargo run --manifest-path "$manifest"
+    cargo run --manifest-path "$manifest" || true
   elif [ "$(find "$taskdir" -maxdepth 1 -type f -name '*.rs' | wc -l)" -ne 0 ]; then
     echo "=== Sourcedatei(en) gefunden -> rustc-Modus"
     for srcfile in $taskdir/*.rs; do
