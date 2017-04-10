@@ -40,4 +40,4 @@ while IFS= read -r -d '' taskdir; do
       echo "=== keine output Tests via bats ausgeführt"
     fi
   done
-done < <(find "$current_hw" -type d -name 'task*' -depth 1 -print0)
+done < <(find "$current_hw" -mindepth 1 -maxdepth 1 -type d -name 'task*' -print0)
