@@ -18,3 +18,21 @@ Schreiben Sie einen Konstruktor *new()* für die Datenstruktur *Config* und erse
 ### Tests
 
 Die Test sind ausgelagert in die Datei `tests/task2.rs`
+
+### Dokumentation
+
+Unter Umständen beschwert sich **cargo doc**, dass es nicht weiss wie es die Dokumentation erstellen kann:
+
+```text
+error: cannot document a package where a library and a binary have the same name. Consider renaming one or marking the target as `doc = false`
+```
+
+Damit **cargo doc** Ihre Dokumentation für die Funktionen in `lib.rs` erstellt, benötigen Sie folgende Erweiterung in Ihrer `Cargo.toml` Datei.
+
+```text
+[[bin]]
+doc = false
+name = "task2"
+```
+
+Damit weiß cargo, dass es die Dokumentation aus `lib.rs` erstellen soll und nicht aus `main.rs`.
