@@ -113,7 +113,7 @@ des Repositories folgenden Befehl ausführen (nur Linux und Verwandte!):
 
 1. Sobald Sie alle Aufgaben bearbeitet haben, und zur Bewertung die Aufgabe abgeben wollen, erstellen Sie einen Branch für den Pull-Request.
 1. Wählen Sie dann auf github diesen Branch aus und öffnen Sie einen Pull-Reqeust auf diesen Branch. Vergessen Sie nicht einen Tutor als Reviewer einzutragen.
-1. Bei Ihrem Pull-Request laufen automatische Tests durch, die Ihr Programm testen.
+1. Bei Ihrem Pull-Request laufen automatische Tests durch, die Ihr Programm testen. Dies sind nicht alle Tests von `ci/run-all.sh`, daher MÜSSEN Sie unbedingt selbst im lokalen Verzeichnis auf Ihrer Workstation den `ci/run-all.sh` Test ausführen!
 1. Falls Ihnen ein Fehler unterlaufen ist, so können Sie auch nach dem Pull-Request noch Änderungen am Code vornehmen. Das sollte jedoch der Ausnahmefall bleiben. Überprüfen Sie daher VOR Ihrem Pull-Request, ob die nötigen Aufgaben bearbeitet wurden und ob die Tests alle durchlaufen.
 
 >Achtung: Damit das Testen in github nicht zu lange dauert, sind einige sehr lang laufende CI Tests deaktiviert. Bitte aktivieren Sie diese Tests NICHT für travis sondern führen Sie die Tests nur lokal aus. Github Classroom erlaubt nur immer eine laufende Instanz der Travis Tests. Erstellen Sie somit Ihren Pull-Request rechtzeitig, da ansonsten die Deadline aufgrund anderer laufender CI Tests von Ihnen u.U. nicht eingehalten werden kann.
