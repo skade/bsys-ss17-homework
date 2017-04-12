@@ -12,7 +12,7 @@ Please answer the questions, by giving the result and - if asked - an explanatio
 
 1. Run with these flags: `-s 0 -n 10`. What value do you have set `-l` (the bounds register) to in order to ensure that all the generated virtual addresses are within bounds?
 
-2. Run with these flags: `-s 1 -n 10 -l 100`. What is the maximum value that bounds can be set to, such that the address space still fits into physical memory in its entirety (explanation)?
+2. Run with these flags: `-s 1 -n 10 -l 100`. What is the maximum value that base can be set to, such that the address space still fits into physical memory in its entirety (explanation)?
 
 3. Run some of the same problems above, but with larger address spaces (-a) and physical memories (-p). How does increasing effect the results (explanation)?
 
