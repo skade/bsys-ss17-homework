@@ -82,7 +82,7 @@ Um in unserem Programm auf die Parameter zugreifen zu können, werden wir diese 
 /// each line
 ///
 /// Returns nothing
-print_arguments(args: &Vec<String>)
+fn print_arguments(args: &Vec<String>)
 ```
 
 Die Funktion gibt den Inhalt des übergeben Vektors zeilenweise aus.
