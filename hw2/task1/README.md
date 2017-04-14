@@ -169,7 +169,7 @@ fn parse_arguments(args: &Vec<String>) -> Result<Config, xx >
 
 Implementieren Sie die folgende Fehlerbehandlung:
 
-- Werden vom Benutzer zuwenig übergeben, so gibt die Funktion den Fehlerstring "not enough parameters" zurück. In der API der Funktion oben ist als Typ xx für den String angedeutet und muss entsprechend von Ihnen mit dem richtigen Typen versehen werden. Werden zuviele Parameter angegeben, so werten Sie nur die beiden ersten übergebenen aus.
+- Werden vom Benutzer zuwenig übergeben, so gibt die Funktion den Fehlerstring "not enough parameters" zurück. Werden vom Benutzer zuviele Parameter übergeben, so wertet die Funktion nur die ersten beiden aus. In der API der Funktion oben ist als Typ xx für den String angedeutet und muss entsprechend von Ihnen mit dem richtigen Typen versehen werden.
 
 - Tritt ein Fehler beim Wandeln des 1. Parameter in einen char auf, so geben Sie den String "char mismatch" als Fehlerstring in Result zurück. Wird statt eines chars als 1. Parameter ein String übergeben, so werten Sie nur den ersten Buchstaben davon aus.
 
