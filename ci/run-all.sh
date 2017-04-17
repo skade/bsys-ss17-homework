@@ -17,6 +17,10 @@ MY_PATH="$(dirname "$0")"
 # after compiles run bats tests
 "$MY_PATH/test-bats.sh"
 
+# file existence
+echo "=== Checking for Missing Files ======================================="
+"$MY_PATH/check-files.py"
+
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++"
 echo "+              Everything is fine!                 +"
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++"

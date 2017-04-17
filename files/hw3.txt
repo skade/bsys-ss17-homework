@@ -1,0 +1,5 @@
+./hw3/simu1/ANSWERS.md
+
+./hw3/simu2/ANSWERS.md
+
+./hw3/simu3/ANSWERS.md
