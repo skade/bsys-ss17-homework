@@ -25,6 +25,7 @@ def get_file_lists():
 
 def check_files(file_list):
     optional_folders = []
+    errors = 0
 
     for f in file_list:
         # optional dir
@@ -37,6 +38,10 @@ def check_files(file_list):
                 continue
 
             print("! '{}' is missing".format(f))
+            errors += 1
+
+    if errors == 0:
+        print(" -> All Files found.")
 
 
 def main():

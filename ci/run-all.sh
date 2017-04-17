@@ -5,9 +5,6 @@ set -o errexit -o nounset
 
 MY_PATH="$(dirname "$0")"
 
-# file existence
-"$MY_PATH/check-files.py"
-
 # basic style check
 "$MY_PATH/check-basic-style.py"
 
@@ -19,6 +16,10 @@ MY_PATH="$(dirname "$0")"
 
 # after compiles run bats tests
 "$MY_PATH/test-bats.sh"
+
+# file existence
+echo "=== Checking for Missing Files ======================================="
+"$MY_PATH/check-files.py"
 
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++"
 echo "+              Everything is fine!                 +"
