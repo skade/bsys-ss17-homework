@@ -24,7 +24,6 @@ def get_file_lists():
 
 
 def check_files(file_list):
-    errors = 0
     optional_folders = []
 
     for f in file_list:
@@ -38,19 +37,12 @@ def check_files(file_list):
                 continue
 
             print("! '{}' is missing".format(f))
-            errors += 1
-
-    return errors
 
 
 def main():
-    errors = 0
-
     for f, file_list in get_file_lists().items():
         print(f)
-        errors += check_files(file_list)
-
-    exit(errors)
+        check_files(file_list)
 
 
 if __name__ == '__main__':
