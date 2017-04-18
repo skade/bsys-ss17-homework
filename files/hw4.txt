@@ -1,0 +1,13 @@
+./hw4/task1/Cargo.lock
+./hw4/task1/Cargo.toml
+./hw4/task1/src/main.rs
+./hw4/task1/src/pstree.rs
+./hw4/task1/src/readproc.rs
+./hw4/task1/src/unit_test_readproc.rs
+./hw4/task1/src/unit_test_pstree.rs
+./hw4/task1/tests/output.bats
+
+./hw4/simu1/ANSWERS.md
+
+./hw4/simu2/ANSWERS.md
+
