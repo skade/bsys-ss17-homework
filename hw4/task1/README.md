@@ -174,18 +174,20 @@ Die folgenden Funktionen werden im Modul `readproc.rs` implementiert. Alle Funkt
 Haben Sie die Aufgaben komplett bearbeitet, so sollten sich folgende Dateien in Ihrem HW (Homework) Verzeichnis befinden:
 
 ```text
-  .
+.
 ├── Cargo.lock
 ├── Cargo.toml
 ├── README.md
-└── src
-    ├── main.rs
-    ├── readproc.rs
-    ├── pstree.rs
-    └── unit_test_readproc.rs
-    └── unit_test_pstree.rs
+├── src
+│   ├── main.rs
+│   ├── pstree.rs
+│   ├── readproc.rs
+│   ├── unit_test_pstree.rs
+│   └── unit_test_readproc.rs
+└── tests
+    └── output.bats
 
-1 directory, 7 files
+2 directories, 9 files
 ```
 
 
