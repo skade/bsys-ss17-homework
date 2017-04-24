@@ -1,0 +1,13 @@
+./hw5/task1/Cargo.lock
+./hw5/task1/Cargo.toml
+./hw5/task1/src/main.rs
+./hw5/task1/src/zombie/mod.rs
+./hw5/task1/src/child/mod.rs
+./hw5/task1/src/child/pstree.rs
+./hw5/task1/src/unit_test.rs
+./hw5/task1/tests/output.bats
+
+./hw5/simu1/ANSWERS.md
+
+./hw5/simu2/ANSWERS.md
+
