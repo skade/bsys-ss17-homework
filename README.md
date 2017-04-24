@@ -1,28 +1,5 @@
-# hw5
+# Aufgaben zum BSYS Labor
 
-## Tasks
-To fullfill **hw5** you have to solve:
+In diesem Ordner werden die Aufgaben (Homework,`hw`) veröffentlich, die bearbeitet werden müssen, um den Schein in BSYS zu bekommen. In der Datei `OVERVIEW.md` in diesem Ordner sind weitere Informationen enthalten.
 
-- task1
-- simu1
-- simu2
-
-
-## Files
-You find already or reuse some files for rust tasks. Please remember to use cargo to create a new project for each task and copy the given files into their dedicated directories.
-
-## Pull-Reuest
-
-Please merge any accepted reviews into your branch. If you are ready with the homework, all tests run, please create a pull request named **hw5**.
-
-## Gradings
-
-### hw5
-
-| Task | max. Credits | Comment |
-|---|---|---|
-| task1 | 2 | |
-| simu1 | 1 | |
-| simu2 | 1 | |
-| Deadline | +1 | |
-| = | 5 | |
+Eine Homework besteht aus mehreren Tasks. Sie finden somit die zu einer Homework gehörenden Aufgaben in den `README.md`, Dateien der zughörigen `hwN/taskN/` Ordner. `N` steht als Platzhalter für die enstprechende Homework bzw. Tasknummer.
