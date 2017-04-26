@@ -4,7 +4,7 @@
 ./hw5/task1/src/zombie/mod.rs
 ./hw5/task1/src/child/mod.rs
 ./hw5/task1/src/child/pstree.rs
-./hw5/task1/src/unit_test.rs
+./hw5/task1/src/unit_tests.rs
 ./hw5/task1/tests/output.bats
 
 ./hw5/simu1/ANSWERS.md
