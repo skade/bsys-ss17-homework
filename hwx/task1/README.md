@@ -16,7 +16,7 @@ Das Protokoll beschreibt das Veröffentlichen und Abrufen von Daten aus einem Ne
 
 Das Protokoll kennt 2 Kommandos: Veröffentlichung und Abrufen. Weitere Kommandos sind nicht zugelassen. Das Protokoll arbeitet zeilenweise, d.h. ein newline ('\n') beendet das Kommando.
 
-Die Kommandos folgen folgendem Format:
+Die Kommandos folgen diesem Format:
 
 ```
 <AKTION> [DATEN]\n
@@ -77,8 +77,10 @@ Allokieren Sie die gefunden Daten als `String`.
 
 ## 3.1 Hilfen
 
-* Die Dokumentation von `str` enthält viele wichtige Hinweise.
+Die Dokumentation von [`str`][str] enthält viele wichtige Hinweise.
 
 ## 4.1 Optional
 
-Wenn Sie möchten, können Sie einmal versuchen, die Daten als `String` zu allokieren, ignorieren. Stattdessen geben Sie `&str` zurück. Sie sollten dazu aber ein getrenntes Projekt oder einen Branch verwenden, da diese Strategie für die folgenden Aufgaben wenig Sinn macht.
+Wenn Sie möchten, können Sie einmal versuchen, die Daten nicht als `String` zu allokieren. Stattdessen geben Sie `&str` zurück. Sie sollten dazu aber ein getrenntes Projekt oder einen Branch verwenden, da diese Strategie für die folgenden Aufgaben wenig Sinn macht.
+
+[str]: https://doc.rust-lang.org/std/primitive.str.html
