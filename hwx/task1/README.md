@@ -53,6 +53,8 @@ Implementieren Sie einen Parser für dieses Protokoll. Der Parser sollte so simp
 
 Es ist insbesondere erlaubt, die Eingabe als einzelne Zeile zu erwarten. Die Trennung der Eingabe in einzelne Zeilen ist dem aufrufenden Code überlassen.
 
+Enthält der Input mehrere newlines, darf der Rest ohne Fehler verworfen weden.
+
 Folgendes öffentliche Interface ist vorgegeben:
 
 ```rust
